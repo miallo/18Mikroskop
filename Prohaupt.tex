@@ -169,7 +169,7 @@ Eine der wichtigsten Erfindungen für die Medizin war das Mikroskop.
 Damit konnten erstmals Bakterien als Ursache für Krankheiten entdekt werden.
 Aber auch in zahlreichen anderen Fachbereichen, wie den Materialwissenschaften diehnte es der genaueren Untersuchung der Materie.
 Um diese immer genauer zu untersuchen, benötigte man immer genauere Mikroskope.
-Allerdings setzt die Physik hier Grenzen des machbaren (von der Umgehung des Abbeschen Beugungslimits durch Stefan Hell einmal abgesehen).
+Allerdings setzt die Physik hier Grenzen des Machbaren (von der Umgehung des Abbeschen Beugungslimits durch Stefan Hell einmal abgesehen).
 Diese Grenzen sollen hier Untersucht werden.
 
 
@@ -177,7 +177,26 @@ Diese Grenzen sollen hier Untersucht werden.
 \cite{lp18}
 \section{Theorie}
 \label{sec:theorie}
-                                                                                                                                                                      
+\subsection{Strahlenoptik}
+Die zentrahle Formel der Strahlenoptik ist das \textsc{Snellius}sch Brechungsgesetz:
+\begin{align}
+	n_1 \sin \alpha_1=n_2\sin\alpha_2\, .
+\end{align}
+Es beschreibt, in welchem Winkel $\alpha_2$ Licht, welches von einem Medium mit Brechungsindex $n_1$ in ein zweites mit $n_2$ unter dem Winkel $\alpha_1$ eintritt, sich fortbewegt.
+
+\subsection{Auflösungsvermögen}
+Werden die zu beobachteten Objekte kleiner, so kann man nicht mehr mit Strahlenoptik rechnen, da diese als Näherung der \textsc{Maxwell}-Gleichungen zu ungenau werden.
+Stattdessen muss man die Beugung mit einberechnen.
+Sie besagt, dass bei jeder Abbildung Fehler entstehen, so dass ein Punkt nicht in einen Punkt abgebildet werden kann, sondern "`verschmiert"' wird.
+Zwei dicht beieinanderliegende Punkte werden so unter Umständen in einen großen "`Klecks"' abgebildet, aus dem man nicht erkennen kann, ob er aus einem oder zwei Objekten besteht.
+Das \textsc{Rayleigh}-Kriterium bestimmt, ob diese noch trennbar sind.
+Dies wäre der Fall, falls das Hauptmaximum des ersten Bildes mindestens so weit entfernt ist vom Hauptmaximum des zweiten Bildes, wie dessen erstes Minimum.
+Die kleinste Winkelauflösung beträgt daher:
+\begin{align}
+	\delta_\text{min}=1.22\frac{\lambda}{D}
+\end{align}
+mit der Apertur $D$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse oder des Spaltes) und der Wellenlänge $\lambda$.
+
 \section{Durchführung}
 \label{sec:durchfuehrung}
 
