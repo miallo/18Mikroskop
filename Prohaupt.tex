@@ -142,7 +142,7 @@ Praktikant: &  Michael Lohmann\\
  E-Mail: & m.lohmann@stud.uni-goettingen.de\\
  &  felix.kurtz@stud.uni-goettingen.de\\
 % &  kevin.luedemann@stud.uni-goettingen.de\\
- Betreuer: & \\
+ Betreuer: & Phillip Bastian\\
  Versuchsdatum: & 04.03.2015\\
 \end{tabular}
 \end{Large}
@@ -169,7 +169,7 @@ Eine der wichtigsten Erfindungen für die Medizin war das Mikroskop.
 Damit konnten erstmals Bakterien als Ursache für Krankheiten entdekt werden.
 Aber auch in zahlreichen anderen Fachbereichen, wie den Materialwissenschaften diehnte es der genaueren Untersuchung der Materie.
 Um diese immer genauer zu untersuchen, benötigte man immer genauere Mikroskope.
-Allerdings setzt die Physik hier Grenzen des Machbaren (von der Umgehung des Abbeschen Beugungslimits durch Stefan Hell einmal abgesehen).
+Allerdings setzt die Physik hier Grenzen des machbaren (von der Umgehung des Abbeschen Beugungslimits durch Stefan Hell einmal abgesehen).
 Diese Grenzen sollen hier Untersucht werden.
 
 
@@ -195,7 +195,7 @@ Die kleinste Winkelauflösung beträgt daher:
 \begin{align}
 	\sin\delta_\text{min}=1.22\frac{\lambda}{b}
 \end{align}
-mit der Apertur $D$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse oder des Spaltes) und der Wellenlänge $\lambda$.
+mit der Apertur $b$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse oder des Spaltes) und der Wellenlänge $\lambda$.
 
 \subsection{Linsen}
 Eine Linse ist das wohl wichtigste optische Bauteil.
@@ -216,21 +216,62 @@ Die Vergrößerung des Okulars
 \section{Durchführung}
 \label{sec:durchfuehrung}
 Der Versuch besteht aus zwei Teilen.
+\subsection{Teil A}
 Im ersten wird ein Motic-Mikroskop vermessen, wobei jeder Schritt drei mal wiederholt wird.
 Zunächst wird die Gesamtvergrößerung bestimmt, in dem das Objektmikrometer auf dem Objekttisch befestigt und das Mikroskop darauf fokussiert wird.
 Der Vergleichsmaßstab, welcher auf der Höhe des Objekttisches parallel zu dem Objektmikrometer steht, wird nun mit dem Auge welches nicht durch das Okular guckt beobachtet.
 Diese Bilder kommen zur Überlagerung und so kann die Größe der Markierungen bestimmt werden.
+Falls hierbei Probleme entstehen muss man zunächst mit dem Auge durch das Okular gucken, bis man etwas sieht.
+Danach kann man blinzeln und die Augen entspannt lassen.
 Bei der Wiederholung der Versuche ist natürlich immer darauf zu achten, dass sie erneut richtig fokussiert werden.
-
-Anschließend wird der Tubus mit dem Objektiv entfernt und durch eine Objektiv mit verschiebbarer Mattscheibe ersetzt.
+\subsection{Teil B}
+Anschließend wird das Bild durch den Tubus mit dem Objektiv scharf eingestellt und die zweite Öffnung mit einem Objektiv mit verschiebbarem Mattscheibenokular bestückt.
 Diese wird nun (bei verdunkeltem Raum) so verschoben, dass das Zwischenbild scharf auf ihr zu erkennen ist.
+Dann wird mit einem Messschieber die Größe des abgebildeten Zwischenbildes bestimmt.
+Dieses wird ebenfalls dreifach je für das 10-fache und das 40-fache Okular wiederholt, wobei der Objekttisch stets auf der selben Höhe bleibt.
+
+
+Der zweite Teil verwendet den Aufbau aus Abb. \ref{fig:aufbau2}.
+Hierbei wird vor der Lampe mit dem Rotlichtfilter der Glasmaßstab so aufgestellt, dass dieser scharf durch das Objektiv abgebildet wird.
+Dann wird zwischen Objektiv und Glasscheibe ein Einfachspalt gestellt, dessen Breite variabel einstellbar ist.
+Wird dieser immer mehr geschlossen, so wird das Bild erkennbar unschärfer.
+Es ist nun die Öffnung des Spaltes zu suchen, bei der gerade so die kleinen Skalenteile nichtmehr unterscheidbar sind.
+Dies erfordert etwas Übung, da der Punkt gesucht wird, bei dem die komplette Skala zu einem Grauschleier wird.
+Nun wird die Entfernung zwischen Glasmaßstab und Einfachspalt gemessen.
+
+Anschließend muss die Breite des Spaltes bestimmt werden.
+Hierfür nimmt man den Maßstab aus der Schiene und bewegt den Schpalt so weit vom Okular fort, dass dieser scharf erkennbar ist.
 
 
 \section{Auswertung}
 \label{sec:auswertung}
 
+\begin{table}
+\centering
+\begin{tabular}{|c||c|c|}
+\hline
+ & $V$ & $V_\text{Obj.}$\\\hline\hline
+10-fach & $98.4\pm0.7$ & $9.44\pm0.07$\\\hline
+40-fach & $365\pm 3$ & $40.8\pm 0.3$\\\hline
+\end{tabular}
+\caption{Die Vergrößerungen des Mikroskops}
+\label{tab:vergr}
+\end{table}
+
 \section{Diskussion}
 \label{sec:diskussion}
+\subsection{Teil A}
+Bei der Messung des 40-fachen Objektives wurde offensichtlich ein Messwert falsch aufgezeichnet.
+Es ergeben sich Vergrößerungen von 408, 412 und 310.
+Augenscheinlich wurde bei einer kleinen Skala von 4 Skalenteilen statt $8.2\si{\centi\metre}$ der Wert $6.2\si{\centi\metre}$ aufgeschrieben.
+Ansonsten ergäbe der letzte Wert eine 410-fache Vergrößerung, welche wesentlich plausiebler ist.
+
+\subsection{Teil B}
+Der zweite Teil der Versuchsdurchführung lässt mehr Interpretationsspielraum.
+
+Die Bestimmung der Breite des Spaltes war insofern herausfordernd, als dass das Gehäuse schräg war, wodurch nur eine Seite des Spaltes scharfzustellen war.
+Des weiteren hatte unser Objektiv kein Fadenkreuz, so dass wir ein Staubkorn darin als Fixpunkt nehmen mussten.
+
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
