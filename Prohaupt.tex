@@ -172,30 +172,15 @@ Um diese immer genauer zu untersuchen, benötigte man immer genauere Mikroskope.
 Allerdings setzt die Physik hier Grenzen des machbaren (von der Umgehung des Abbeschen Beugungslimits durch Stefan Hell einmal abgesehen).
 Diese Grenzen sollen hier Untersucht werden.
 
-
-
-\cite{lp18}
 \section{Theorie}
 \label{sec:theorie}
-\subsection{Strahlenoptik}
-Die zentrahle Formel der Strahlenoptik ist das \textsc{Snellius}sch Brechungsgesetz:
-\begin{align}
-	n_1 \sin \alpha_1=n_2\sin\alpha_2\, .
-\end{align}
-Es beschreibt, in welchem Winkel $\alpha_2$ Licht, welches von einem Medium mit Brechungsindex $n_1$ in ein zweites mit $n_2$ unter dem Winkel $\alpha_1$ eintritt, sich fortbewegt.
+%\subsection{Strahlenoptik}
+%Die zentrahle Formel der Strahlenoptik ist das \textsc{Snellius}sch Brechungsgesetz:
+%\begin{align}
+%	n_1 \sin \alpha_1=n_2\sin\alpha_2\, .
+%\end{align}
+%Es beschreibt, in welchem Winkel $\alpha_2$ Licht, welches von einem Medium mit Brechungsindex $n_1$ in ein zweites mit $n_2$ unter dem Winkel $\alpha_1$ eintritt, sich fortbewegt.
 
-\subsection{Auflösungsvermögen}
-Werden die zu beobachteten Objekte kleiner, so kann man nicht mehr mit Strahlenoptik rechnen, da diese als Näherung der \textsc{Maxwell}-Gleichungen zu ungenau werden.
-Stattdessen muss man die Beugung mit einberechnen.
-Sie besagt, dass bei jeder Abbildung Fehler entstehen, so dass ein Punkt nicht in einen Punkt abgebildet werden kann, sondern "`verschmiert"' wird.
-Zwei dicht beieinanderliegende Punkte werden so unter Umständen in einen großen "`Klecks"' abgebildet, aus dem man nicht erkennen kann, ob er aus einem oder zwei Objekten besteht.
-Das \textsc{Rayleigh}-Kriterium bestimmt, ob diese noch trennbar sind.
-Dies wäre der Fall, falls das Hauptmaximum des ersten Bildes mindestens so weit entfernt ist vom Hauptmaximum des zweiten Bildes, wie dessen erstes Minimum.
-Die kleinste Winkelauflösung beträgt daher:
-\begin{align}
-	\sin\delta_\text{min}=1.22\frac{\lambda}{b}
-\end{align}
-mit der Apertur $b$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse oder des Spaltes) und der Wellenlänge $\lambda$.
 
 \subsection{Linsen}
 Eine Linse ist das wohl wichtigste optische Bauteil.
@@ -205,13 +190,64 @@ Generell kann man Linsen in zwei Gruppen einteilen:
 \item \emph{Sammellinsen}, welche zwei konvexe Oberflächen haben und parallel einfallendes Licht auf einen Fukuspunkt (hinter der Linse) bündeln und
 \item \emph{Streulinsen}, welche mit zwei konkaven Oberflächen versehen sind und das parallele Licht so streuen, als ob es von dem Brennpunkt (hier vor der Linse) ausgehen würde.
 \end{itemize}
-Eine Lupe besitzt die Vergrößerung $V=s_0/f$, wobei $f$ die Brennweite der Linse und $s_0\approx 25\si{\centi\meter}$ die Entfernung ist, in der ein Mensch gerade noch scharf sehen kann.
-Dies 
+Natürlich gibt es auch andere, wie plankonvexe oder konvex-konkave Linsen.
+Die Vergrößerung eines Gegenstandes ist definiert als 
+\begin{align}
+m=\frac{b}{g}=\frac{B}{G}\qquad .\label{eq:vergr}
+\end{align}
+Hierbei bezeichnet $b$ die Bildweite, $g$ die Gegenstandsweite, $B$ die Bildgröße und $G$ die Gegenstandsgröße.
+Allerdings ist das Auge am entspanntesten, wenn sich der Gegenstand in der Brennebene befindet, wodurch $B\approx\infty \si\metre$ wird.
+Eine andere sinnvolle Definition der Vergrößerung ist die Winkelvergrößerung.
+Sie ist für eine Lupe nach \cite[S.362]{demtroeder2} als
+\begin{align}
+V=\frac{\varepsilon_\text{mit}}{\varepsilon_\text{ohne}}=\frac{G}{f}\cdot\frac{s_0}{G}=\frac{s_0}{f}\label{eq:winkelvergr}
+\end{align}
+definiert.
+Hierbei ist $f$ die Brennweite der Linse und $s_0\approx 25\si{\centi\meter}$ die Entfernung, in der ein Mensch gerade noch scharf sehen kann.
 
 \subsection{Das Mikroskop}
-Ein Mikroskop besteht aus zwei Sammellinsen, wobei die erste ein reelles Zwischenbild erzeugt, welches dann von der zweiten wie mit einer Lupe vergrößert wird.
+Ein Mikroskop besteht aus zwei Sammellinsen, wobei die erste wie ein Teleskop ein reelles Zwischenbild erzeugt, welches dann von der zweiten wie mit einer Lupe vergrößert wird.
 Die Vergrößerung, welche von einem Mikroskop erzeugt wird, ist daraus resultierend das Produkt der einzelnen Vergrößerungen.
-Die Vergrößerung des Okulars 
+Die Vergrößerung des Okulars ist die einer Lupe, wie in \eqref{eq:winkelvergr}:
+\begin{align}
+V_\text{Ok}=\frac{s_0}{f_\text{Ok}}\qquad ,
+\end{align}
+und die des Okulars
+\begin{align}
+V_\text{Obj}=\frac{b}{g}\qquad .
+\end{align}
+Da das Objekt ungefähr in der Brennebene liegt, befindet sich das Zwischenbild am Ende des Tubus:
+\begin{align}
+\notag g\approx -f_\text{Obj} \qquad \text{und}\qquad b\approx t\\
+\Rightarrow V_\text{Obj}=-\frac{t}{f_\text{Obj}}\qquad .
+\end{align}
+
+Die Gesamtvergrößerung beträgt also
+\begin{align}
+V=-\frac{t\cdot s_0}{f_\text{Obj}\cdot f_\text{Ok}}\qquad .
+\end{align}
+Das negative Vorzeichen besagt, dass das Bild auf dem Kopf steht.
+
+\subsection{Auflösungsvermögen}
+Werden die zu beobachteten Objekte kleiner, so kann man nicht mehr mit Strahlenoptik rechnen, da diese als Näherung der \textsc{Maxwell}-Gleichungen zu ungenau werden.
+Stattdessen muss man die Beugung mit einberechnen.
+Sie besagt, dass bei jeder Abbildung Fehler entstehen, so dass ein Punkt nicht in einen Punkt abgebildet werden kann, sondern "`verschmiert"' wird.
+Zwei dicht beieinanderliegende Punkte werden so unter Umständen in einen großen "`Klecks"' abgebildet, aus dem man nicht erkennen kann, ob er aus einem oder zwei Objekten besteht.
+Das \textsc{Rayleigh}-Kriterium bestimmt, ob diese noch trennbar sind.
+Dies wäre der Fall, falls das Hauptmaximum des ersten Bildes mindestens so weit entfernt ist vom Hauptmaximum des zweiten Bildes, wie dessen erstes Minimum.
+Die kleinste Winkelauflösung beträgt daher nach \cite[S. 368]{demtroeder2}:
+\begin{align*}
+	\Delta x_\text{min}=1.22\frac{\lambda\cdot f}{D}
+\end{align*}
+mit der Apertur $D$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse) und der Wellenlänge $\lambda$ des beobachten Lichts.
+Der beobachtete Öffnungswinkel beträgt $2\sin\alpha=\frac Df$.
+Daraus ergibt sich
+\begin{align}
+\delta x_\text{min}=1.22\frac{\lambda}{2n\cdot\sin\alpha}\approx\frac{\lambda}{N}
+\end{align}
+mit der numerischen Apertur $N=n\sin\alpha$.
+
+
 
 \section{Durchführung}
 \label{sec:durchfuehrung}
@@ -248,18 +284,33 @@ Selbiges wird mit dem anderen Rand getan, so dass die Differenz den Durchmesser 
 
 \section{Auswertung}
 \label{sec:auswertung}
-
-\begin{table}
+\subsection{Teil A}
+Um die Vergrößerung von Mikroskop und Objektiv zu berechnen, wird Formel \eqref{eq:vergr} verwendet.
+Die Werte der kleinen Skala wurden als richtig angenommen und dafür diejenigen der großen Skala mit einem größeren Fehler versehen.
+Daraus ergibt sich mit der Gaußschen Fehlerfortpflanzung:
+\begin{align*}
+\sigma_V=\frac{\sigma_B}{G}
+\end{align*}
+mit $B=\frac{\text{Skalenteile}}{\frac{20\text{Skalenteile}}{1\si{\centi\metre}}}$.
+Die sich ergebenden Werte aus Tabelle \ref{tab:vergr} sind die gewichteten Mittelwerte.
+\begin{table}[!h]
 \centering
-\begin{tabular}{|c||c|c|}
+\begin{tabular}{|c||c|c|c|}
 \hline
- & $V$ & $V_\text{Obj.}$\\\hline\hline
-10-fach & $98.4\pm0.7$ & $9.44\pm0.07$\\\hline
-40-fach & $365\pm 3$ & $40.8\pm 0.3$\\\hline
+ & $V$ & $V_\text{Obj}$ & $\frac{V}{V_\text{Obj}}$\\\hline\hline
+10-fach & $98.4\pm0.7$ & $9.44\pm0.07$ & $10.4\pm 0.1$ \\\hline
+40-fach & $365\pm 3$ & $40.8\pm 0.3$ &$8.95\pm0.09$ \\\hline
 \end{tabular}
-\caption{Die Vergrößerungen des Mikroskops}
+\caption{Die Vergrößerungen des Mikroskops aus den gewichteten Mittelwerten der Messungen}
 \label{tab:vergr}
 \end{table}
+
+
+Die Vergrößerung des Okulars ergibt sich aus
+\begin{align}
+V_\text{Ok}&=\frac{V}{V_\text{Obj}}\\
+\sigma_{V_\text{Ok}}&=\sqrt{\left(\frac{\sigma_V}{V_\text{Obj}}\right)^2+\left(\sigma_{V_\text{Obj}} \frac{V}{V_\text{Obj}^2} \right)^2}
+\end{align}
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
@@ -272,9 +323,9 @@ $ 102, 2 $	&($310,10$)	&$ 100, 2 $	&$ 360, 10 $	&$ 8.4, 0.1 $	&$ 35.2, 0.8 $	&$ 
 
 
 \end{tabular}
-\caption{<+Caption text+>}
-\label{tab:<+label+>}
-\end{table}<++>
+\caption{Messwerte aus Teil A}
+\label{tab:MesswerteA}
+\end{table}
 
 \section{Diskussion}
 \label{sec:diskussion}
