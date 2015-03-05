@@ -308,13 +308,14 @@ Die sich ergebenden Werte aus Tabelle \ref{tab:vergr} sind die gewichteten Mitte
 
 Die Vergrößerung des Okulars ergibt sich aus
 \begin{align}
-V_\text{Ok}&=\frac{V}{V_\text{Obj}}\\
+V_\text{Ok}&=\frac{V}{V_\text{Obj}}\qquad \text{mit}\\
 \sigma_{V_\text{Ok}}&=\sqrt{\left(\frac{\sigma_V}{V_\text{Obj}}\right)^2+\left(\sigma_{V_\text{Obj}} \frac{V}{V_\text{Obj}^2} \right)^2}
 \end{align}
 und der gewichtete Mittelwert aus Tabelle \ref{tab:vergr} ergibt:
 \begin{align}
-V_\text{Ok}=9.60\pm0.07
+V_\text{Ok}=9.60\pm0.07\qquad .
 \end{align}
+
 \begin{table}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
@@ -330,6 +331,17 @@ $ 102, 2 $	&($310,10$)	&$ 100, 2 $	&$ 360, 10 $	&$ 8.4, 0.1 $	&$ 35.2, 0.8 $	&$ 
 \caption{Messwerte aus Teil A}
 \label{tab:MesswerteA}
 \end{table}
+
+Die Brennweite der Linse berechnet sich durch
+\begin{align}
+f&=\frac{\Delta t}{V_\text{m. Tub} - V_\text{o. Tub}}\\
+\sigma_f&=\frac{1}{\left(V_\text{o. Tub} - V_\text{m. Tub}\right)^{2}} \sqrt{\sigma_{\Delta t}^{2} \left(V_\text{o. Tub} - V_\text{m. Tub}\right)^{2} + \Delta t^{2} \left(\sigma_{V_\text{o. Tub}}^{2} + \sigma_{V_\text{m. Tub}}^{2}\right)}
+\end{align}
+und es ergeben sich für die Brennweiten aus den gewittelten Mittelwerten
+\begin{align}
+f_\text{10x}=(0.182 \pm 0.007)\si\metre\\
+f_\text{40x}=(0.048 \pm 0.002)\si\metre
+\end{align}<++>
 
 \section{Diskussion}
 \label{sec:diskussion}
