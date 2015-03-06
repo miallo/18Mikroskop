@@ -376,15 +376,15 @@ Die Brennweite der Linse berechnet sich durch
 f&=\frac{\Delta t}{V_\text{m. Tub} - V_\text{o. Tub}}\\
 \sigma_f&=\frac{1}{\left(V_\text{o. Tub} - V_\text{m. Tub}\right)^{2}} \sqrt{\sigma_{\Delta t}^{2} \left(V_\text{o. Tub} - V_\text{m. Tub}\right)^{2} + \Delta t^{2} \left(\sigma_{V_\text{o. Tub}}^{2} + \sigma_{V_\text{m. Tub}}^{2}\right)}
 \end{align}
-und es ergeben sich für die Brennweiten aus den gewittelten Mittelwerten
+und es ergeben sich für die Brennweiten aus den gewichteten Mittelwerten
 \begin{align}
 f_\text{10x}=(0.0182 \pm 0.0007)\si\metre\\
 f_\text{40x}=(0.0048 \pm 0.0002)\si\metre
 \end{align}
 
 \subsection{Teil B}
-Laut der Praktikumsanleitung sind die Linien auf dem Plexiglasstab $d=0.1\si{\milli\metre}$ voneinander entfernt.
-Können diese in einem Abstand $e=(0.0276\pm0.0001)\si{\metre}$ von dem Mikroskop nicht mehr voneinander unterschieden werden, so beträgt das Auflösungsvermögen gerade $A=\frac{e}{d}=276\pm2$.
+Laut der Praktikumsanleitung haben die Linien auf dem Plexiglasstab einen Abstand $x_\text{min}=0.1\si{\milli\metre}$.
+Können diese in einem Abstand $e=(0.0276\pm0.0001)\si{\metre}$ von dem Mikroskop nicht mehr voneinander unterschieden werden, so beträgt das Auflösungsvermögen gerade $A=\frac{e}{x_\text{min}}=276\pm2$.
 
 Die Spaltbreite betrug $r=(0.388\pm0.001)\si{\milli\metre}$.
 Der vorhandene Öffnungswinkel betrug somit
@@ -396,7 +396,7 @@ Die Wellenlänge betrug $650\si{\nano\metre}$ und somit ergibt sich
 A=\frac{e\cdot n\sin\varphi}{\lambda}=\frac{r}{\lambda}=597 \pm 2
 \end{align*}
 
-In Abb. \ref{fig:plexi} ist der Strahlengang zu sehen.
+In Abb. \ref{fig:strahl3} ist der Strahlengang zu sehen.
 Im Dreieck innerhalb des Plexiglases gilt nach dem Satz des Pythagoras
 \begin{align}
 \sin\alpha&=\frac{d/2}{\sqrt{d^2/4+L^2}}\\
@@ -412,11 +412,22 @@ Es ergeben sich Vergrößerungen von 408, 412 und 310.
 Augenscheinlich wurde bei einer kleinen Skala von 4 Skalenteilen statt $8.2\si{\centi\metre}$ der Wert $6.2\si{\centi\metre}$ aufgeschrieben.
 Ansonsten ergäbe der letzte Wert eine 410-fache Vergrößerung, welche wesentlich plausiebler ist.
 
+In Tabelle \ref{tab:vergr} ist zu erkennen, dass die Vergrößerung des Okulars $V_\text{Ok}$ bei den Messungen mit 10- und 40-facher Vergrößerung des Objektivs stark voneinander abweicht.
+Das Okular hat laut Beschriftung eine Vergrößerung um den Faktor 10, so dass beide Werte ihn nicht in ihrem Fehlerintervall einschließen.
+Ihr gewichteter Mittelwert von $9.60\pm0.07$ ist jedoch nur um 4\% kleiner, so dass diese Messung dennoch als Erfolg zu sehen ist.
+
+Die Brennweiten der beiden Objektive besitzen nur ein 4\% des Wertes großes Fehlerintervall, was angemessen erscheint.
+
+
 \subsection{Teil B}
 Der zweite Teil der Versuchsdurchführung lässt mehr Interpretationsspielraum.
 
 Die Bestimmung der Breite des Spaltes war insofern herausfordernd, als dass das Gehäuse schräg war, wodurch nur eine Seite des Spaltes scharfzustellen war.
 Des weiteren hatte unser Objektiv kein Fadenkreuz, so dass wir ein Staubkorn darin als Fixpunkt nehmen mussten.
+Dies ist natürlich wesentlich ungenauer, so dass die Bestimmung der Spaltbreite vermutlich ein zu geringes Fehlerintervall aufweist.
+
+Das Auflösevermögen, welches theoretisch bestimmt ist
+
 
 
 \bibliography{literatur}
