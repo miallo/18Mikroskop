@@ -1,0 +1,67 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{demtroeder2}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Demtröder}{D.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag, Berlin Heidelberg}%
+  }
+  \strng{namehash}{DW1}
+  \strng{fullhash}{DW1}
+  \field{sortinit}{D}
+  \field{edition}{6}
+  \field{isbn}{978-3-642-29943-8}
+  \field{title}{Experimentalphysik 2, Elektrizität und Optik}
+  \field{year}{2012}
+\endentry
+
+\entry{hecht}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Hecht}{H.}%
+     {Eugene}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Addison Wesley}%
+  }
+  \strng{namehash}{HE1}
+  \strng{fullhash}{HE1}
+  \field{sortinit}{H}
+  \field{edition}{4}
+  \field{isbn}{0321188780}
+  \field{title}{Optics}
+\endentry
+
+\entry{LP17}{misc}{}
+  \field{sortinit}{L}
+  \field{howpublished}{https://lp.uni-goettingen.de/get/text/4256}
+  \field{title}{Lehrportal der Universität Göttingen}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

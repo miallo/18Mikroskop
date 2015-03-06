@@ -316,10 +316,10 @@ Deren sichtbare Anzahl ist nun zu notieren, ebenso wie die Länge des Stabes.
 \centering
 \def\svgwidth{0.7\linewidth}
 \input{strahlengang3.pdf_tex}
-\caption{Aufbau zur optischen Schiene mit dem Plexiglasstab}
+\caption{Aufbau zur optischen Schiene mit dem Plexiglasstab\protect\footnotemark}
 \label{fig:strahl3}
 \end{figure}
-
+\footnotetext{nach \url{http://genug-davon.de/img/aprakt/v18/strahlengang3.tar}}
 
 \section{Auswertung}
 \label{sec:auswertung}
@@ -389,7 +389,7 @@ Können diese in einem Abstand $e=(0.0276\pm0.0001)\si{\metre}$ von dem Mikrosko
 Die Spaltbreite betrug $r=(0.388\pm0.001)\si{\milli\metre}$.
 Der vorhandene Öffnungswinkel betrug somit
 \begin{align*}
-\sin\varphi=\frac{r}{e}=0.14
+\sin\varphi=\frac{r}{e}=0.01406 \pm 0.00006
 \end{align*}
 Die Wellenlänge betrug $650\si{\nano\metre}$ und somit ergibt sich
 \begin{align*}
@@ -403,6 +403,11 @@ Im Dreieck innerhalb des Plexiglases gilt nach dem Satz des Pythagoras
 \Rightarrow N&=n\sin\alpha=n\frac{d/2}{\sqrt{d^2/4+L^2}}
 \end{align}
 mit der Länge $L$ des Stabes und dem Brechungsindex $n\approx1.49$ in seinem Inneren.
+Die Dicke $d$ wurde aus der Anzahl der beobachteten Striche im Inneren berechnet.
+Es waren 10 komplett zu sehen, so dass die Breite $d\approx 5\si{\milli\metre}$ betrug.
+\begin{align*}
+\Rightarrow N=0.090
+\end{align*}
 
 \section{Diskussion}
 \label{sec:diskussion}
@@ -414,9 +419,12 @@ Ansonsten ergäbe der letzte Wert eine 410-fache Vergrößerung, welche wesentli
 
 In Tabelle \ref{tab:vergr} ist zu erkennen, dass die Vergrößerung des Okulars $V_\text{Ok}$ bei den Messungen mit 10- und 40-facher Vergrößerung des Objektivs stark voneinander abweicht.
 Das Okular hat laut Beschriftung eine Vergrößerung um den Faktor 10, so dass beide Werte ihn nicht in ihrem Fehlerintervall einschließen.
-Ihr gewichteter Mittelwert von $9.60\pm0.07$ ist jedoch nur um 4\% kleiner, so dass diese Messung dennoch als Erfolg zu sehen ist.
+Die Abweichungen lassen sich auch dadurch erklären, dass der scharfe Punkt insbesondere des langen Tubuses nicht genau zu erkennen war.
+Wir haben ihn vermutlich zu weit hineingeschoben, so dass die Vergrößerung zu klein war.
+Der gewichtete Mittelwert der Vergrößerung des Objektives mit $9.60\pm0.07$ ist jedoch nur um 4\% kleiner als laut Beschriftung, so dass diese Messung dennoch als Erfolg zu sehen ist.
 
 Die Brennweiten der beiden Objektive besitzen nur ein 4\% des Wertes großes Fehlerintervall, was angemessen erscheint.
+Es ist allerdings nur ein Faktor 3.79 zwischen den beiden, statt dem erwarteten 4.
 
 
 \subsection{Teil B}
@@ -426,7 +434,10 @@ Die Bestimmung der Breite des Spaltes war insofern herausfordernd, als dass das 
 Des weiteren hatte unser Objektiv kein Fadenkreuz, so dass wir ein Staubkorn darin als Fixpunkt nehmen mussten.
 Dies ist natürlich wesentlich ungenauer, so dass die Bestimmung der Spaltbreite vermutlich ein zu geringes Fehlerintervall aufweist.
 
-Das Auflösevermögen, welches theoretisch bestimmt ist
+Das Auflösevermögen, welches theoretisch bestimmt ist durch $A=\frac{r}{\lambda}=597\pm2$ ist mehr als doppelt so groß, wie das durch $A=\frac{e}{x_\text{min}}=276\pm2$ bestimmte.
+Dies lässt sich insofern erklären, als dass vermutlich die Striche noch zu unterscheiden gewesen sind, jedoch nur verschwommen und so falsche Annahmen gemacht wurden.
+
+
 
 
 
