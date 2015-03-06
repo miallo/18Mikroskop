@@ -38,7 +38,7 @@
 
 % Anderes Literaturverzeichnisformat
 %\usepackage[square,sort&compress]{natbib}
-
+\usepackage{hyperref}
 % Für Farbe
 \usepackage{color}
 
@@ -183,11 +183,21 @@ Diese Grenzen sollen hier Untersucht werden.
 
 
 \subsection{Linsen}
+ \begin{figure}[h]
+   \centering
+   \subfigure[Sammellinse\label{fig:linsestrahl}]
+   {\includegraphics[width=0.49\textwidth]{LinseStrahlengang}}
+   \hfill
+   \subfigure[Lupe\label{fig:lupestrahl}]
+   {\includegraphics[width=0.49\textwidth]{LupeStrahlengang}}
+   \caption{Schematische Strahlengänge von Sammellinse und Lupe jeweils aus \protect\cite[6.3.15, 13 Uhr]{lp18}}
+   \label{fig:strahl}
+ \end{figure}
 Eine Linse ist das wohl wichtigste optische Bauteil.
 Sie besteht aus einem speziell geschliffenen Glas, dessen Seiten jeweils entweder konvex oder konkav sind.
 Generell kann man Linsen in zwei Gruppen einteilen:
 \begin{itemize}
-\item \emph{Sammellinsen}, welche zwei konvexe Oberflächen haben und parallel einfallendes Licht auf einen Fukuspunkt (hinter der Linse) bündeln und
+\item \emph{Sammellinsen}, welche zwei konvexe Oberflächen haben und parallel einfallendes Licht auf einen Fukuspunkt (hinter der Linse) bündeln, wie in Abb. \ref{fig:linsestrahl} zu sehen ist, und
 \item \emph{Streulinsen}, welche mit zwei konkaven Oberflächen versehen sind und das parallele Licht so streuen, als ob es von dem Brennpunkt (hier vor der Linse) ausgehen würde.
 \end{itemize}
 Natürlich gibt es auch andere, wie plankonvexe oder konvex-konkave Linsen.
@@ -206,7 +216,14 @@ definiert.
 Hierbei ist $f$ die Brennweite der Linse und $s_0\approx 25\si{\centi\meter}$ die Entfernung, in der ein Mensch gerade noch scharf sehen kann.
 
 \subsection{Das Mikroskop}
-Ein Mikroskop besteht aus zwei Sammellinsen, wobei die erste wie ein Teleskop ein reelles Zwischenbild erzeugt, welches dann von der zweiten wie mit einer Lupe vergrößert wird.
+\begin{figure}[!h]
+\centering
+\includegraphics{MikroskopStrahlengang.png}
+\caption{Strahlengang des Mikroskops aus \protect\cite[6.3.15, 13 Uhr]{lp18}}
+\label{fig:microstrahl}
+\end{figure}
+
+Ein Mikroskop besteht aus zwei Sammellinsen, wobei die erste wie ein Teleskop ein reelles Zwischenbild erzeugt (s. Grafik \ref{fig:microstrahl}), welches dann von der zweiten wie mit einer Lupe vergrößert wird.
 Die Vergrößerung, welche von einem Mikroskop erzeugt wird, ist daraus resultierend das Produkt der einzelnen Vergrößerungen.
 Die Vergrößerung des Okulars ist die einer Lupe, wie in \eqref{eq:winkelvergr}:
 \begin{align}
@@ -237,13 +254,13 @@ Das \textsc{Rayleigh}-Kriterium bestimmt, ob diese noch trennbar sind.
 Dies wäre der Fall, falls das Hauptmaximum des ersten Bildes mindestens so weit entfernt ist vom Hauptmaximum des zweiten Bildes, wie dessen erstes Minimum.
 Die kleinste Winkelauflösung beträgt daher nach \cite[S. 368]{demtroeder2}:
 \begin{align*}
-	\Delta x_\text{min}=1.22\frac{\lambda\cdot f}{D}
+	x_\text{min}=1.22\frac{\lambda\cdot f}{D}
 \end{align*}
 mit der Apertur $D$ (einer charakteristischen Größe des optischen Systems, wie z.B. Durchmesser der Linse) und der Wellenlänge $\lambda$ des beobachten Lichts.
 Der beobachtete Öffnungswinkel beträgt $2\sin\alpha=\frac Df$.
 Daraus ergibt sich
 \begin{align}
-\delta x_\text{min}=1.22\frac{\lambda}{2n\cdot\sin\alpha}\approx\frac{\lambda}{N}
+x_\text{min}=1.22\frac{\lambda}{2n\cdot\sin\alpha}\approx\frac{\lambda}{N}
 \end{align}
 mit der numerischen Apertur $N=n\sin\alpha$.
 
@@ -260,13 +277,22 @@ Diese Bilder kommen zur Überlagerung und so kann die Größe der Markierungen b
 Falls hierbei Probleme entstehen muss man zunächst mit dem Auge durch das Okular gucken, bis man etwas sieht.
 Danach kann man blinzeln und die Augen entspannt lassen.
 Bei der Wiederholung der Versuche ist natürlich immer darauf zu achten, dass sie erneut richtig fokussiert werden.
-\subsection{Teil B}
+
+
 Anschließend wird das Bild durch den Tubus mit dem Objektiv scharf eingestellt und die zweite Öffnung mit einem Objektiv mit verschiebbarem Mattscheibenokular bestückt.
 Diese wird nun (bei verdunkeltem Raum) so verschoben, dass das Zwischenbild scharf auf ihr zu erkennen ist.
 Dann wird mit einem Messschieber die Größe des abgebildeten Zwischenbildes bestimmt.
 Dieses wird ebenfalls dreifach je für das 10-fache und das 40-fache Okular wiederholt, wobei der Objekttisch stets auf der selben Höhe bleibt.
 
-
+\subsection{Teil B}
+\begin{figure}[h]
+\centering
+\def\svgwidth{0.7\linewidth}
+\input{schieneStrahlengang.pdf_tex}
+\caption{Aufbau zur Bestimmung der Blendenweite, bei der die Linien ununterscheidbar werden\protect\footnotemark}
+\label{fig:aufbau2}
+\end{figure}
+\footnotetext{nach \url{http://genug-davon.de/img/aprakt/v18/schieneStrahlengang.tar}}
 Der zweite Teil verwendet den Aufbau aus Abb. \ref{fig:aufbau2}.
 Hierbei wird vor der Lampe mit dem Rotlichtfilter der Glasmaßstab so aufgestellt, dass dieser scharf durch das Objektiv abgebildet wird.
 Dann wird zwischen Objektiv und Glasscheibe ein Einfachspalt gestellt, dessen Breite variabel einstellbar ist.
@@ -277,9 +303,22 @@ Nun wird die Entfernung zwischen Glasmaßstab und Einfachspalt gemessen.
 
 Anschließend muss die Breite des Spaltes bestimmt werden.
 Hierfür nimmt man den Maßstab aus der Schiene und bewegt den Schpalt so weit vom Okular fort, dass dieser scharf erkennbar ist.
-Dann wird der eine Rand des Spaltes  durch das Objektiv fixiert und die Position notiert.
+Dann wird der eine Rand des Spaltes durch das Objektiv mit dem Millimetergewinde fixiert und die Position notiert.
 Selbiges wird mit dem anderen Rand getan, so dass die Differenz den Durchmesser ergibt.
 
+Nun wird der Spalt wieder aus dem Strahlengang entfernt und erneut durch den Plexiglasstab ersetzt.
+Und der Stab wird auf eine Position verschoben, in der die Vorderseite (ohne die Gitterlinien) scharf erkennbar ist.
+Auch das Okular wird jetzt durch eine Lochblende ausgetauscht, so dass der Strahlengang wie in Abb. \ref{fig:strahl3} ist.
+Sie sitzt ungefähr in der Ebene des Zwischenbildes, so dass durch sie die Spalte am anderen Plexiglasende zu erkennen sind.
+Deren sichtbare Anzahl ist nun zu notieren, ebenso wie die Länge des Stabes.
+
+\begin{figure}[h]
+\centering
+\def\svgwidth{0.7\linewidth}
+\input{strahlengang3.pdf_tex}
+\caption{Aufbau zur optischen Schiene mit dem Plexiglasstab}
+\label{fig:strahl3}
+\end{figure}
 
 
 \section{Auswertung}
@@ -297,7 +336,7 @@ Die sich ergebenden Werte aus Tabelle \ref{tab:vergr} sind die gewichteten Mitte
 \centering
 \begin{tabular}{|c||c|c|c|}
 \hline
- & $V$ & $V_\text{Obj}$ & $\frac{V}{V_\text{Obj}}$\\\hline\hline
+ & $V$ & $V_\text{Obj}$ & $V_\text{Ok}=\frac{V}{V_\text{Obj}}$\\\hline\hline
 10-fach & $98.4\pm0.7$ & $9.44\pm0.07$ & $10.4\pm 0.1$ \\\hline
 40-fach & $365\pm 3$ & $40.8\pm 0.3$ &$8.95\pm0.09$ \\\hline
 \end{tabular}
@@ -316,21 +355,21 @@ und der gewichtete Mittelwert aus Tabelle \ref{tab:vergr} ergibt:
 V_\text{Ok}=9.60\pm0.07\qquad .
 \end{align}
 
-\begin{table}
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-
-$ 100, 2 $	&$408,8$	&$ 97.0, 2 $	&$ 368, 8 $	&$ 8.6, 0.2 $	&$ 35.2, 0.8 $	&$ 12.9, 0.2 $	&$ 52.8, 0.8 $	\\
-$ 101, 3 $	&$412,8$	&$ 95, 2 $	&$ 348, 5 $	&$ 8.6, 0.2 $	&$ 34.9, 0.5 $	&$ 13.5, 0.3 $	&$ 52.0, 0.7 $	\\
-$ 102, 2 $	&($310,10$)	&$ 100, 2 $	&$ 360, 10 $	&$ 8.4, 0.1 $	&$ 35.2, 0.8 $	&$ 13.4, 0.4 $	&$ 54, 2 $	\\
-		&	&$ 95, 2 $	&$ 351, 5 $	&		&		&		&		\\
-
-
-
-\end{tabular}
-\caption{Messwerte aus Teil A}
-\label{tab:MesswerteA}
-\end{table}
+%begin{table}
+%centering
+%begin{tabular}{|c|c|c|c|c|c|c|c|}
+%
+% 100, 2 $	&$408,8$	&$ 97.0, 2 $	&$ 368, 8 $	&$ 8.6, 0.2 $	&$ 35.2, 0.8 $	&$ 12.9, 0.2 $	&$ 52.8, 0.8 $	\\
+% 101, 3 $	&$412,8$	&$ 95, 2 $	&$ 348, 5 $	&$ 8.6, 0.2 $	&$ 34.9, 0.5 $	&$ 13.5, 0.3 $	&$ 52.0, 0.7 $	\\
+% 102, 2 $	&($310,10$)	&$ 100, 2 $	&$ 360, 10 $	&$ 8.4, 0.1 $	&$ 35.2, 0.8 $	&$ 13.4, 0.4 $	&$ 54, 2 $	\\
+%       	&	&$ 95, 2 $	&$ 351, 5 $	&		&		&		&		\\
+%
+%
+%
+%end{tabular}
+%caption{Messwerte aus Teil A}
+%label{tab:MesswerteA}
+%end{table}
 
 Die Brennweite der Linse berechnet sich durch
 \begin{align}
